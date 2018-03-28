@@ -24,5 +24,5 @@ void *Minimum_t3()
 }
 int main()
 {
-	cout<<"Hello world";
+	pthread_t t1,t2;
 }
