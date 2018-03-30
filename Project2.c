@@ -91,7 +91,7 @@ void *merge(void *obj1)
 		index = index+1;
 		start2 = start2+1;
 	}
-	printf("\nFinal Sorted Array Merged By MergeThread is :\n");
+	printf("\nFinal Sorted Array Merged By Merge Thread :\n");
 	for(i=0;i<index;i++)
 	{
 		printf("%d ",final[i]);
