@@ -53,7 +53,7 @@ void *Maximum_t3(void *obj1)
 int main()
 {
 	int i;
-	printf("Enter range of integer values :");
+	printf("Enter limit of values :");
 	scanf("%d",&obj.range);
 	printf("Enter Values:\n");
 	for(i=0;i<obj.range;i++)
