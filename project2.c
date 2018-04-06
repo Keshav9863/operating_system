@@ -102,9 +102,9 @@ int main()
 {
 	int i,range,mid;
 	pthread_t p1,p2,p3;
-	printf("Enter Range of Elements :");
+	printf("Enter Range :");
 	scanf("%d",&range);
-	printf("Enter Values \n:");
+	printf("Enter Values :\n");
 	for(i=0;i<range;i++)
 	{
 		scanf("%d",&data[i]);
