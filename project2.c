@@ -1,13 +1,14 @@
 #include<stdio.h>
 #include<pthread.h>
 #include<unistd.h>
+#include<stdlib.h>
 struct rage
 {
 	int startI;
 	int endI;
 }obj;
-int data[100];
-int final[100];
+int *data;
+int *final;
 void *sort1(void *obj1)
 {
 	int endI,i,j,temp;
@@ -105,6 +106,8 @@ int main()
 	printf("Enter Range :");
 	scanf("%d",&range);
 	printf("Enter Values :\n");
+	data=(int *)malloc(range*sizeof(int));
+	final=(int *)malloc(range*sizeof(int));
 	for(i=0;i<range;i++)
 	{
 		scanf("%d",&data[i]);
