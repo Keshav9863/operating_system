@@ -1,10 +1,11 @@
 #include<stdio.h>
 #include<pthread.h>
 #include<unistd.h>
+#include<stdlib.h>
 struct data
 {
 	int range;
-	int data[100];
+	int data*;
 }obj;
 int average;
 int maximum;
@@ -55,6 +56,7 @@ int main()
 	int i;
 	printf("Enter limit of values :");
 	scanf("%d",&obj.range);
+	obj.data=(int *)malloc(obj.range*sizeof(int));
 	printf("Enter Values:\n");
 	for(i=0;i<obj.range;i++)
 	{
