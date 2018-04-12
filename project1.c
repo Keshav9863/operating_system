@@ -5,7 +5,7 @@
 struct data
 {
 	int range;
-	int data*;
+	int *data;
 }obj;
 int average;
 int maximum;
